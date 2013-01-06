@@ -8,4 +8,5 @@ function start(){
 
 	Crafty.background("gray");
 	
+	
 };
