@@ -63,6 +63,7 @@ Crafty.scene("level", function(){
     }
   }
 
-  var player = Crafty.e("2D, Player");
+  var player = Crafty.e("2D, Player, Collision, Solid");
+
 
 });
