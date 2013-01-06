@@ -1,12 +1,13 @@
-var HEIGHT = 400
-var WIDTH = 600
+
+var HEIGHT = 550
+var WIDTH = 650
 
 
 function start(){
 	Crafty.init(WIDTH, HEIGHT);
 	Crafty.Canvas;
 
-	Crafty.background("gray");
-	
-	
+	Crafty.scene("loading");
+
 };
+
