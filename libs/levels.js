@@ -64,5 +64,6 @@ Crafty.scene("level", function(){
   }
 
   var player = Crafty.e("2D, Player");
-
+  var trasgo = Crafty.e("Enemy","trasgo1");
+  trasgo.setPosition(250,500);
 });
