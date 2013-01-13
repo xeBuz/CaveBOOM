@@ -20,14 +20,15 @@
 				 life: this._life,
 				 autobomb: this._autobomb})  
 				 
-      this.requires("DOM, Color").color("#521F00");
+      this.requires("DOM, Color, Collision, Solid").color("#521F00");
 	  
 	  this.requires("Multiway").multiway({x:this._speeds,y:this._speeds}, 
                             {UP_ARROW: -90, DOWN_ARROW: 90, RIGHT_ARROW: 0, LEFT_ARROW: 180, 
                              W: -90, S: 90, D: 0, A: 180});
 							 
 	  this.bind('Moved', function(from) { //funcion que evita que el personaje salga de la ventana 
-		    if((this.x + this.w) > WIDTH || this.x < 0 || (this.y + this.h) > HEIGHT || this.y < 0 ) {
+		    if((this.x + this.w) > WIDTH || this.x < 0 || (this.y + this.h) > HEIGHT || this.y < 0 || 
+		    	this.hit('Block') ) {
     				this.attr({x: from.x, y:from.y});
 		     }
 		});

@@ -2,32 +2,32 @@ Crafty.scene("level", function(){
   LEVEL = LEVEL + 1
   map_base = 
         [
-        [ [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "] ],
-        [ [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "] ],
-        [ [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "] ],
-        [ [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "] ],
-        [ [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "] ],
-        [ [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "] ],
-        [ [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "] ],
-        [ [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "] ],
-        [ [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "] ],
-        [ [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "], ["steel"], [" "] ],
-        [ [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "], [" "] ]
+        [ [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""] ],
+        [ [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""] ],
+        [ [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""] ],
+        [ [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""] ],
+        [ [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""] ],
+        [ [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""] ],
+        [ [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""] ],
+        [ [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""] ],
+        [ [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""] ],
+        [ [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""], ["Steel"], [""] ],
+        [ [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""], [""] ]
         ]
 
   map_01 = 
         [
-        [ [" "], [" "], ["brick"], ["brick"], [" "], ["brick"], [" "], ["brick"], [" "], ["brick"], ["brick"], ["brick"], [" "] ],
-        [ [" "], ["steel"], ["brick"], ["steel"], ["brick"], ["steel"], [" "], ["steel"], ["brick"], ["steel"], [" "], ["steel"], ["brick"] ],
-        [ ["brick"], [" "], ["brick"], ["brick"], ["brick"], ["brick"], ["brick"], ["brick"], [" "], ["brick"], ["brick"], [" "], ["brick"] ],
-        [ ["brick"], ["steel"], [" "], ["steel"], [" "], ["steel"], ["brick"], ["steel"], [" "], ["steel"], [" "], ["steel"], ["brick"] ],
-        [ ["brick"], [" "], ["brick"], ["brick"], ["brick"], ["brick"], [" "], ["brick"], ["brick"], ["brick"], ["brick"], ["brick"], ["brick"] ],
-        [ [""], ["steel"], ["brick"], ["steel"], ["brick"], ["steel"], ["brick"], ["steel"], ["brick"], ["steel"], [" "], ["steel"], ["brick"] ],
-        [ ["brick"], [" "], [" "], ["brick"], [" "], ["brick"], ["brick"], ["brick"], [" "], ["brick"], [" "], [" "], ["brick"] ],
-        [ ["brick"], ["steel"], ["brick"], ["steel"], [" "], ["steel"], [" "], ["steel"], ["brick"], ["steel"], ["brick"], ["steel"], ["brick"] ],
-        [ ["brick"], [" "], ["brick"], [" "], ["brick"], ["brick"], [" "], [" "], ["brick"], [" "], ["brick"], ["brick"], ["brick"] ],
-        [ [" "], ["steel"], [" "], ["steel"], ["brick"], ["steel"], [" "], ["steel"], ["brick"], ["steel"], [" "], ["steel"], ["brick"] ],
-        [ [" "], ["brick"], ["brick"], [" "], ["brick"], [" "], [" "], [" "], [" "], [" "], ["brick"], ["brick"], [" "] ]
+        [ [""], [""], ["Brick"], ["Brick"], [""], ["Brick"], [""], ["Brick"], [""], ["Brick"], ["Brick"], ["Brick"], [""] ],
+        [ [""], ["Steel"], ["Brick"], ["Steel"], ["Brick"], ["Steel"], [""], ["Steel"], ["Brick"], ["Steel"], [""], ["Steel"], ["Brick"] ],
+        [ [""], [""], ["Brick"], ["Brick"], ["Brick"], ["Brick"], ["Brick"], ["Brick"], [""], ["Brick"], ["Brick"], [""], ["Brick"] ],
+        [ ["Brick"], ["Steel"], [""], ["Steel"], [""], ["Steel"], ["Brick"], ["Steel"], [""], ["Steel"], [""], ["Steel"], ["Brick"] ],
+        [ ["Brick"], [""], ["Brick"], ["Brick"], ["Brick"], ["Brick"], [""], ["Brick"], ["Brick"], ["Brick"], ["Brick"], ["Brick"], ["Brick"] ],
+        [ [""], ["Steel"], ["Brick"], ["Steel"], ["Brick"], ["Steel"], ["Brick"], ["Steel"], ["Brick"], ["Steel"], [""], ["Steel"], ["Brick"] ],
+        [ ["Brick"], [""], [""], ["Brick"], [""], ["Brick"], ["Brick"], ["Brick"], [""], ["Brick"], [""], [""], ["Brick"] ],
+        [ ["Brick"], ["Steel"], ["Brick"], ["Steel"], [""], ["Steel"], [""], ["Steel"], ["Brick"], ["Steel"], ["Brick"], ["Steel"], ["Brick"] ],
+        [ ["Brick"], [""], ["Brick"], [""], ["Brick"], ["Brick"], [""], [""], ["Brick"], [""], ["Brick"], ["Brick"], ["Brick"] ],
+        [ [""], ["Steel"], [""], ["Steel"], ["Brick"], ["Steel"], [""], ["Steel"], ["Brick"], ["Steel"], [""], ["Steel"], ["Brick"] ],
+        [ [""], ["Brick"], ["Brick"], [""], ["Brick"], [""], [""], [""], [""], [""], ["Brick"], ["Brick"], [""] ]
         ]
 
 
@@ -36,7 +36,7 @@ Crafty.scene("level", function(){
   {
     for (var j=0; j< 13; j++)
     {
-      Crafty.e("2D, DOM, floor").attr({x: j * 50, y: i * 50, });
+      Crafty.e("2D, DOM, Floor").attr({x: j * 50, y: i * 50, });
     }  
   } 
 
@@ -48,8 +48,10 @@ Crafty.scene("level", function(){
       switch(LEVEL)
       {
         case 1:
-          if (map_01[i][j] != " "){
-            var s = Crafty.e("2D, DOM, Collision, Solid, " +map_01[i][j] ).attr({x: j * 50, y: i * 50, });
+          if (map_01[i][j] != ""){
+            var s = Crafty.e("Block, " +map_01[i][j] )
+                          .attr({x: j * 50, y: i * 50, });
+
           } 
 
           break;

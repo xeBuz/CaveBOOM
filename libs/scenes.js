@@ -6,9 +6,9 @@ Crafty.scene("loading", function() {
     });
 
   Crafty.sprite(50, "media/tileset.png", {
-    brick:   [0,0],
-    steel :  [1,0],
-    floor:   [2,0]
+    Brick:   [0,0],
+    Steel :  [1,0],
+    Floor:   [2,0]
   });
 
   Crafty.e("2D, DOM, Text").attr({w: 100, h: 20, x: 250, y: 100})
