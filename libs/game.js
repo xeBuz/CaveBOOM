@@ -8,5 +8,7 @@ function start(){
 	Crafty.Canvas;
 
 	Crafty.scene("loading");
+
+
 };
 

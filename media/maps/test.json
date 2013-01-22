@@ -1,0 +1,46 @@
+{ "height":10,
+ "layers":[
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":10,
+         "name":"Tile Layer 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":13,
+         "x":0,
+         "y":0
+        }],
+ "orientation":"orthogonal",
+ "properties":
+    {
+
+    },
+ "tileheight":50,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "image":"..\/Dev\/HTML5\/Bomberman\/media\/tileset.png",
+         "imageheight":50,
+         "imagewidth":150,
+         "margin":0,
+         "name":"Block",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":50,
+         "tileproperties":
+            {
+             "0":
+                {
+                 "components":"Brick"
+                }
+            },
+         "tilewidth":50
+        }],
+ "tilewidth":50,
+ "version":1,
+ "width":13
+}

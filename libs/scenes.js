@@ -19,15 +19,15 @@ Crafty.scene("loading", function() {
 
 Crafty.scene("main", function() {
 
-  /*
-  Crafty.e("2D, DOM, Text").attr({w: 100, h: 20, x: 250, y: 100})
+/*
+  Crafty.e("2D, DOM, Text").attr({w: 100, h: 100, x: 250, y: 100})
         .text("New Game")
         .css({"text-align": "center"})
         .bind('onclick', function() {
             console.log("click")
             Crafty.scene("level")
         });
-  */
+*/
 
   Crafty.scene("level")
 });
