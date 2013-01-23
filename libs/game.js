@@ -8,6 +8,7 @@ function start(){
 	Crafty.Canvas;
 
 	Crafty.scene("loading");
+	Crafty.background("url(media/floor.jpg)");
 
 
 };
