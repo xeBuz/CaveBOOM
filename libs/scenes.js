@@ -13,23 +13,23 @@ Crafty.scene("loading", function() {
 
   Crafty.e("2D, DOM, Text").attr({w: 100, h: 20, x: 250, y: 100})
         .text("Loading")
-        .css({"text-align": "center"})
+        .css({"text-align": "center"}) 
 });
 
-
+ 
 Crafty.scene("main", function() {
+  Crafty.background("Black");
 
-/*
-  Crafty.e("2D, DOM, Text").attr({w: 100, h: 100, x: 250, y: 100})
-        .text("New Game")
-        .css({"text-align": "center"})
-        .bind('onclick', function() {
-            console.log("click")
-            Crafty.scene("level")
-        });
-*/
 
-  Crafty.scene("level")
+  var Main =  Crafty.e("2D, DOM, Text").attr({w: 100, h: 100, x: 250, y: 100})
+                    .text("Press any key to start")
+                    .css({"text-align": "center"})
+                    .css({"text-color": "#FFFFF"})
+                    .bind('KeyDown', function(e) { 
+                          Crafty.scene("level")
+                        });       
+  
+  
 });
 
 
