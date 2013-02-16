@@ -1,4 +1,4 @@
-Crafty.c("Block", {
+Crafty.c("Block", { 
 	_size : 50,
 
 	init: function(){
