@@ -2,7 +2,7 @@
   Crafty.c("Player",{
     _size : 45,
 	_posX : (0),
-    _posY : (0),
+    _posY : (0), 
 	_speeds : 1.5,
 	_resistence: 1,
 	_bombs: 3,
@@ -61,29 +61,36 @@
 	},
 		
 	setSpeeds: function (p){
-		this._speeds = p;
+		this._speeds = this._speeds + p;
 	},
 	
 	setSize: function (p){
-		this._size = p;
+		this._size = this._size + p;
 	},
 	
 	setPosX: function (p){
-		this._posX = p;
+		this._posX =  p;
 	},
 	
 	setPosY: function (p){
 		this._posY = p;
 	},
+
+	setPos: function (x, y){
+		this._posX = x;
+		this._posY = y;
+	},
 	
 	setResistence: function (p){
-		this._resistence = p;
+		this._resistence = this._resistence + p;
 	},
+
 	setBombs: function (p){
-		this._bombs = p;
+		this._bombs = this._bombs + p;
 	},
+
 	setLife: function (p){
-		this._life = p;
+		this._life = this._life + p;
 	},
 	
 	setAutobomb: function (p){

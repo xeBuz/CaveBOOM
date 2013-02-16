@@ -16,7 +16,7 @@
 	},
 	
 	setSize: function (p){
-		this._size = p;
+		this._size = this._size + p;
 	},
 	
 	setPosX: function (p){
@@ -26,6 +26,11 @@
 	setPosY: function (p){
 		this._posY = p;
 	},
+
+	setPos: function (x, y){
+		this._posX = x;
+		this._posY = y;
+	},	
 	
 	setTime: function (p){
 		this._time = p;
