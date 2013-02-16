@@ -34,7 +34,7 @@ Crafty.c("Enemy",{
 		
 	randomAxisPath : function(){
 		var pathFlag = parseInt(Math.random()*2);
-		console.log(pathFlag);
+		//console.log(pathFlag);
 		if(pathFlag === 0){
 			this.axis = "x";
 		}
