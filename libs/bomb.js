@@ -41,11 +41,11 @@
 	},
 	boom: function() {
 		this.delay(function() {
-						var fireUp = Crafty.e("2D, Fire").attr({x: this.x-8, y: this.y-this.length-15, h: this.length});
-						var fireDown = Crafty.e("2D, Fire").attr({x: this.x-8, y: this.y+this.w+5, h: this.length });
-						var fireLeft = Crafty.e("2D, Fire").attr({x: this.x-8-this.length, y: this.y-15, w: this.length });
-						var fireRight = Crafty.e("2D, Fire").attr({x: this.x-8+50, y: this.y-15, w: this.length });
-						var fireCenter = Crafty.e("2D, Fire").attr({x: this.x-8, y: this.y-15, w: this.length });
+						var fireUp = Crafty.e("2D, Fire").attr({x: this.x-10, y: this.y-this.length-10, h: this.length});
+						var fireDown = Crafty.e("2D, Fire").attr({x: this.x-10, y: this.y+this.w+10, h: this.length });
+						var fireLeft = Crafty.e("2D, Fire").attr({x: this.x-10-this.length, y: this.y-10, w: this.length });
+						var fireRight = Crafty.e("2D, Fire").attr({x: this.x-10+50, y: this.y-10, w: this.length });
+						var fireCenter = Crafty.e("2D, Fire").attr({x: this.x-10, y: this.y-10, w: this.length });
 						this.delay(function() {
 								fireUp.destroy(); 
 								fireDown.destroy();
