@@ -3,7 +3,7 @@ Crafty.scene("level", function(){
  
 
   Crafty.background("url(media/floor.jpg)");
-  var map = Crafty.e("TiledLevel").tiledLevel("media/maps/level_001.json");
+  var map = Crafty.e("TiledLevel").tiledLevel("json/maps/level_001.json");
   var player = Crafty.e("2D, Player");
  
   //Crafty.modules({ 'crafty-debug-bar': 'release' }, function () {

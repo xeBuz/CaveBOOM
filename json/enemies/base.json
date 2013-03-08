@@ -1,0 +1,16 @@
+{
+	//Componen Name, also for reference
+	"name": "base", 
+	// Amount of hit required for kill the enemy. Integer
+	"life": 1,
+	// Speed. duh.
+	"speed": 10,
+	// Equivalent to this.Required()
+	"components": ["2D", "DOM", "Collision", "Solid"],
+	// Component name for the AI, also added by Required()
+	"ai": "MoveSimple",	
+	// Special movement/components for bosses
+	"special": "",
+	// If can pass through the walls
+	"ghost": false,
+}
