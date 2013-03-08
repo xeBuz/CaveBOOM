@@ -7,11 +7,6 @@
 
 var types = [];
 
-function DefineArrayOfTypes(){
-
-
-}
-
 //Usage: Crafty.e("PowerUp").create(x, y);
 Crafty.c("PowerUp",{
 	_size : 20,
