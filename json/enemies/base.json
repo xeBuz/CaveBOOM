@@ -1,8 +1,19 @@
 {
-	"enemy":{
-		"name": "base",
+	"base":
+	{
+	 	"name": "base", 
 		"life": 1,
 		"speed": 10,
+		"components": "2D, DOM, Collision, Solid",
+		"ai": "MoveSimple",	
+		"special": "",
+		"ghost": false
+	},
+	"otro":
+	{
+	 	"name": "otro", 
+		"life": 2,
+		"speed": 30,
 		"components": "2D, DOM, Collision, Solid",
 		"ai": "MoveSimple",	
 		"special": "",
