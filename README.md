@@ -1,4 +1,4 @@
-CaveMBOOM
+KazaBOOM
 =========
 
 Testing a game in HTML5
