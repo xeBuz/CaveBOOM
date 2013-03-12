@@ -5,16 +5,30 @@ Crafty.sprite(32,"media/characters.png",{
 		gully1 : [0,13]
 	});
 
+
+// Enemy craation:
+// Crafty.e("Enemy").Create("Name").Move()
 Crafty.c("Enemy", {
 	w : 45,
 	h : 45,
-	life,
-	speed,
-	ghost,
+	life : 0,
+	speed : 0,
+	ghost : false,
 
-	init: function(){
-		// Parser to load JSON file
-	} 
+
+	Create: function (name, file) {
+		console.log("asdads")
+		$.getJSON( file , function(data){
+
+ 			console.log(data)	
+ 			//$.each(data, function(key, val) {
+			
+			//	items.push('<li id="' + key + '">' + val + '</li>');
+			//}) 
+
+			//console.log(items)
+   		})
+	},
 
  	setPosition : function(xPos,yPos){
  		this.attr({

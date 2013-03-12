@@ -7,7 +7,7 @@
 
 var types = [];
 
-//Usage: Crafty.e("PowerUp").create(x, y);
+
 Crafty.c("PowerUp",{
 	_size : 20,
 	_type : "",
@@ -25,7 +25,7 @@ Crafty.c("PowerUp",{
 
 		// Time: 1 minute
 		this.delay(function(){this.destroy}, 60000);
-	}
+	},
 
 	use: function (){
 		switch (this.type){
