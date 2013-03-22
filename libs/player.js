@@ -1,5 +1,10 @@
-  var contBombas = 0;
-  Crafty.c("Player",{
+var contBombas = 0;
+
+Crafty.sprite(45, "media/sprite-first-animation-demo-walk-45.png", {
+    Kaza: [0, 0, 1, 1],
+});
+
+Crafty.c("Player",{
     _size : 45,
 	_posX : (0),
     _posY : (0), 
@@ -20,14 +25,15 @@
 				 life: this._life,
 				 autobomb: this._autobomb})  
 				 
-      this.requires("DOM, Color, Collision, Solid").color("#521F00");
+      this.requires("DOM, Color, Collision, Solid, SpriteAnimation, Kaza").color("#521F00");
 	  
 	  this.requires("Multiway").multiway({x:this._speeds,y:this._speeds}, 
                             {UP_ARROW: -90, DOWN_ARROW: 90, RIGHT_ARROW: 0, LEFT_ARROW: 180, 
                             W: -90, S: 90, D: 0, A: 180});
 	  
 	  
-	  //this.requires("CrossWay").CrossWay(2) 		
+	  this.animate("Kaza", 0, 0, 7); 
+	  this.animate("Kaza", 15, -1); 
 
 	  this.bind('Moved', function(from) { 
 		    if((this.x + this.w) > WIDTH || this.x < 0 || (this.y + this.h) > HEIGHT || this.y < 0 || 
@@ -97,6 +103,26 @@
 		this._autobomb = p;
 	}
   });
+
+Crafty.c("Animation", {
+    init: function() {
+        // If the "animate" component is not added to this one, then add it
+        if (!this.has("SpriteAnimation"))
+        {
+            this.addComponent("SpriteAnimation");
+        }
+
+        // Bind the "enterframe" event, called every time the frame is displayed
+        this.bind("enterframe", function() {
+            // If the animation is not playing anymore, then reload it
+            if (!this.isPlaying("solo"))
+            {
+                this.sprite(4, 0, 1, 1); // Go back to the first sprite of the animation
+                this.animate("solo", 20, -1); // Launch the animation, changing sprite every 20ms
+            }	
+        });
+    },
+});
 
 
 Crafty.c('CrossWay', {
