@@ -5,7 +5,7 @@ Crafty.sprite(45, "media/sprite-first-animation-demo-walk-45.png", {
 });
 
 Crafty.c("Player",{
-    _size : 45,
+    _size : 40,
 	_posX : (0),
     _posY : (0), 
 	_speeds : 1.5,
@@ -18,12 +18,7 @@ Crafty.c("Player",{
       this.attr({w: this._size,
                  h: this._size,
 				 x: this._posX, 
-                 y: this._posY,
-				 speeds: this._speeds,
-				 resistence: this._resistence,
-				 bombs: this._bombs,
-				 life: this._life,
-				 autobomb: this._autobomb})  
+                 y: this._posY })  
 				 
       this.requires("DOM, Color, Collision, Solid, SpriteAnimation, Kaza").color("#521F00");
 	  
@@ -32,25 +27,28 @@ Crafty.c("Player",{
                             W: -90, S: 90, D: 0, A: 180});
 	  
 	  
-	  this.animate("Kaza", 0, 0, 7); 
+	  this.animate("Kaza", 0, 0, 1); 
 	  this.animate("Kaza", 15, -1); 
 
 	  this.bind('Moved', function(from) { 
 		    if((this.x + this.w) > WIDTH || this.x < 0 || (this.y + this.h) > HEIGHT || this.y < 0 || 
-		    	this.hit('Block') ) {
+		    	this.hit('Block') || this.hit('Steel') || this.hit('SolidBomb')) {
     				this.attr({x: from.x, y:from.y});
 		     }
 		});
 		
 	  this.bind('KeyDown', function(e) { //funcion que crea las bombas cuando se presiona la barra espaciadora
 			
-            if(e.keyCode === Crafty.keys.SPACE && contBombas < this.bombs && this.autobomb == true){
+            if(e.keyCode === Crafty.keys.SPACE && contBombas < this._bombs && this._autobomb == true){
 				
 				var bomb = Crafty.e("2D, Bomb").attr({x: this.positionX() , y: this.positionY() }); 
 				contBombas++;
 				bomb.boom();
 			}				
 		});
+		this.onHit("Fire", function(){
+				this.destroy();
+		});	  
 		
 	},
 

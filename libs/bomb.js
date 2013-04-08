@@ -13,6 +13,12 @@
 				 time: this._time,
 				 length: this._long})  
       this.requires("DOM, Collision, Delay, Solid, Color").color("#000000");
+      this.delay(function() { 
+      							this.requires("SolidBomb");}
+     							,1500);
+      this.onHit("Fire", function(){
+	  	this.boom();
+		});
 	},
 	
 	setSize: function (p){

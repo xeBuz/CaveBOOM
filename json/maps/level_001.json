@@ -31,7 +31,7 @@
  "tilesets":[
         {
          "firstgid":1,
-         "image":"..\/Dev\/HTML5\/Bomberman\/media\/tileset.png",
+         "image":".\/media\/tileset.png",
          "imageheight":50,
          "imagewidth":150,
          "margin":0,
@@ -46,15 +46,11 @@
             {
              "0":
                 {
-                 "components":"Brick, Collision, Solid, Block"
+                 "components":"Collision, Solid, Brick, Block"
                 },
              "1":
                 {
-                 "components":"Steel, Collision, Solid, Block"
-                },
-             "2":
-                {
-                 "components":"Floor"
+                 "components":"Collision, Solid, Steel"
                 }
             },
          "tilewidth":50
