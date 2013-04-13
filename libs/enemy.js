@@ -8,7 +8,7 @@ Crafty.sprite(32,"media/characters.png",{
 var file = "json/enemies/base.json";
 
 // Enemy craation:
-// Crafty.e("Enemy").init("Name").Move()
+// Crafty.e("Enemy").Create("Name").Move()
 Crafty.c("Enemy", {
 	_size : 45,
 	_posX : 100,
@@ -17,19 +17,22 @@ Crafty.c("Enemy", {
 	_speed : 0, 
 	_ghost : false,
 	
-	init: function(name){	
+	Create: function(name){	
 		// this is important
 		var e = this;
-        e.attr({w: e._size,
+
+		e.attr({w: e._size,
                 h: e._size,
 				x: e._posX, 
-                y: e._posY })  		
+                y: e._posY });
+
 		$.getJSON( file , function(data){
 			$(data.Enemies).each(function(index, element){
 				if (element.name == name){
 					e._life = element.life;
 					e._speed = element.speed;
-					e.setComponents(element.components);
+					e.requires(element.components);
+					//e.setComponents(element.components);
 					e._ghost = element.ghost == "true"		
 				};
 			})

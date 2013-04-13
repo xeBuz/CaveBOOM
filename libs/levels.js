@@ -25,7 +25,7 @@ function CreatePlayer(level){
 
 function CreateEnemies(level){
     // Set the position and type of enemies for the current level 
-    Crafty.e("Enemy").init("base");
+    Crafty.e("Enemy").Create("base");
 
     var trasgo = Crafty.e("Enemy","trasgo1");
   	trasgo.setPosition(250,500);
